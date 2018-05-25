@@ -8,9 +8,9 @@ class TimelineEvent extends React.Component {
     const status = this.props.status;
     const timestamp = this.props.timestamp;
     return(
-      <div>
-        <h3>{ person }</h3>
-        <strong><Timestamp time={ timestamp } /></strong>
+      <div className="timeline">
+        <h4>{ person }</h4>
+        <span><Timestamp time={ timestamp } /></span>
         <p>{ status }</p>
       </div>
     );
