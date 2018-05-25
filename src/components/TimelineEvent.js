@@ -5,12 +5,13 @@ import Timestamp from './Timestamp';
 class TimelineEvent extends React.Component {
   render() {
     const person = this.props.person;
+    const timeStamp = this.props.timeStamp;
     const status = this.props.status;
 
     return (
       <section>
         <p>{person}</p>
-        <Timestamp />
+        <p>{timeStamp}</p>
         <p>{status}</p>
       </section>
     );
