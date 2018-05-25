@@ -6,8 +6,8 @@ class TimelineEvent extends Component {
   render() {
     const person = this.props.person;
     const status = this.props.status;
-    // const time = <Timestamp time={Date.now()}/>
-    const time = this.props.time;
+    const time = <Timestamp time={this.props.time}/>
+
     return(
       <article>
       <h3>Name: {person}</h3>
@@ -19,3 +19,6 @@ class TimelineEvent extends Component {
 }
 
 export default TimelineEvent;
+
+
+// const time = <Timestamp time={Date.now()}/>

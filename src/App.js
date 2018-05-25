@@ -7,22 +7,9 @@ import TimelineEvent from './components/TimelineEvent';
 
 class App extends Component {
   render() {
-    console.log(timelineData);
 
+    const eventComponents = timelineData.events;
 
-    const eventComponents = timelineData.events.map((event) => {
-      return(
-        <li key={event.person}>
-        <TimelineEvent
-        person={event.person}
-        status={event.status}
-        time={event.timeStamp}
-        />
-        </li>
-      );
-    });
-
-    // Customize the code below
     return (
       <div className="App">
       <header className="App-header">
@@ -30,8 +17,7 @@ class App extends Component {
       </header>
       <main className="App-main">
 
-      {eventComponents}
-
+      <Timeline events={eventComponents} />
 
       </main>
       </div>
