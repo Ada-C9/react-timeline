@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import timelineData from './data/timeline.json';
-// import Timeline from './components/Timeline';
-import TimelineEvent from './components/TimelineEvent'
+import Timeline from './components/Timeline';
 
 class App extends Component {
   render() {
@@ -12,10 +11,10 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">TimeLine</h1>
+          <h1 className="App-title">Ada Lovelace social media feed</h1>
         </header>
         <main className="App-main">
-          <TimelineEvent/>
+          <Timeline/>
         </main>
       </div>
 
