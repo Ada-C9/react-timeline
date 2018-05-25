@@ -16,7 +16,7 @@ class Timeline extends React.Component {
       );
     });
     return(
-      <section>{eventsComponents}</section>
+      <section className="timeline">{eventsComponents}</section>
     );
   }
 }
