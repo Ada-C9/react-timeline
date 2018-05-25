@@ -4,12 +4,14 @@ import Timestamp from './Timestamp';
 
 class TimelineEvent extends React.Component {
   render() {
+    const person = this.props.person;
+    const status = this.props.status;
 
     return (
       <section>
-        <p>Zheng</p>
+        <p>{person}</p>
         <Timestamp />
-        <p>Programming</p>
+        <p>{status}</p>
       </section>
     );
   }
