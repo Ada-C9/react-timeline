@@ -1,5 +1,17 @@
 .timeline {
-  width: 30%;
+  width: 45%;
   margin: auto;
   text-align: left;
+  background-color: whitesmoke;
+  padding: 2em;
+  border-bottom: solid 2px #E6ECF0;
+}
+
+h4 {
+  display: inline-block;
+  margin: 0;
+}
+
+span {
+  float: right;
 }
