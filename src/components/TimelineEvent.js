@@ -4,8 +4,19 @@ import Timestamp from './Timestamp';
 
 class TimelineEvent extends React.Component {
   render() {
-    // Fill in your code here
-    return;
+
+    const person = this.props.eventData.person;
+    const status = this.props.eventData.status;
+    const eventTime = this.props.eventData.timeStamp;
+
+
+    return(
+      <article className = "timeline-event">
+        <p className = "event-person">{person}</p>
+        <p className = "event-status">{status}</p>
+        <Timestamp time = {eventTime} />
+      </article>
+    );
   }
 }
 
