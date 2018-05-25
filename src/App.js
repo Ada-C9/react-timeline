@@ -7,17 +7,16 @@ import Timeline from './components/Timeline';
 class App extends Component {
   render() {
     const timelineEventsList = <Timeline eventsList={timelineData['events']}/>;
+
     const pageTitle = timelineData['person'] + '\'s Social Media Feed';
-
-    console.log(timelineData);
-
+    // console.log(timelineData);
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">{pageTitle}</h1>
         </header>
         <main className="App-main">
-        {timelineEventsList}
+          {timelineEventsList}
         </main>
       </div>
     );
