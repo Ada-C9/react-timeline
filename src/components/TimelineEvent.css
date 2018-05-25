@@ -25,3 +25,14 @@
   margin-top: 0.5rem;
   text-align: right;
 }
+
+span {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.time {
+  float: right;
+  font-weight: normal;
+  font-size: .7em;
+}
