@@ -16,6 +16,7 @@ class App extends Component {
         </header>
         <main className="App-main">
         </main>
+        <Timeline />
       </div>
     );
   }
