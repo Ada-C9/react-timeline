@@ -1,27 +1,19 @@
 import React, { Component } from 'react';
 import './App.css';
 import timelineData from './data/timeline.json';
-
 import Timeline from './components/Timeline';
-import TimelineEvent from './components/TimelineEvent'
+
 
 class App extends Component {
   render() {
-    console.log(timelineData);
-    console.log(timelineData.events[0].person);
-
-
-    const data = timelineData.events
-
-
-
-    // const Timeline = timelineEvents
+    const data = timelineData.events;
+    const user = timelineData.person;
 
     // Customize the code below
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title"> Timeline</h1>
+          <h1 className="App-title">{user}: Media Timeline</h1>
         </header>
         <main className="App-main">
         </main>

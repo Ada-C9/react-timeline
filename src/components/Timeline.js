@@ -5,7 +5,7 @@ import TimelineEvent from './TimelineEvent';
 class Timeline extends React.Component {
   render() {
 
-    const events = this.props.events
+    const events = this.props.events;
 
     const timelineEvents = events.map((e) => {
       console.log(e.timeStamp);
@@ -16,14 +16,14 @@ class Timeline extends React.Component {
         status={e.status}
         time={e.timeStamp}
         />
-      )
+      );
     })
 
     return (
       <article className="timeline">
       {timelineEvents}
       </article>
-    )
+    );
   }
 }
 
