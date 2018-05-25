@@ -11,7 +11,7 @@ class Timeline extends React.Component {
         <TimelineEvent
           person={oneEvent.person}
           status={oneEvent.status}
-          time={oneEvent.time}
+          time={oneEvent.timeStamp}
         />
       );
     });
