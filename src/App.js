@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import timelineData from './data/timeline.json';
-
+import TimelineEvent from './components/TimelineEvent';
 import Timeline from './components/Timeline';
+
 
 class App extends Component {
   render() {
@@ -16,7 +17,9 @@ class App extends Component {
         </header>
         <main className="App-main">
         </main>
+        <TimelineEvent person='angie' status='Insufficiently Caffeinated' />
       </div>
+
     );
   }
 }
