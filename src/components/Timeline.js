@@ -3,10 +3,21 @@ import './Timeline.css';
 import TimelineEvent from './TimelineEvent';
 
 class Timeline extends React.Component {
-
   render() {
-    // Fill in your code here
-    return;
+    const eventsList = this.props.eventsList;
+
+    const eventsComponents = eventsList.map((oneEvent) => {
+      return (
+        <TimelineEvent
+          person={oneEvent.person}
+          status={oneEvent.status}
+          time={oneEvent.time}
+        />
+      );
+    });
+    return(
+      <section>{eventsComponents}</section>
+    );
   }
 }
 

@@ -13,34 +13,26 @@ class App extends Component {
       {
         person: "Foo",
         status: "Hello, World",
-        time: "2018-05-18T22:19:40Z"
+        time: "2018-05-18T22:19:40"
       },
       {
         person: "Bar",
         status: "I like pie",
-        time: "2018-05-18T22:19:40Z"
+        time: "2018-05-22T22:19:00"
       }
     ];
 
-    const eventsComponents = currTimelineEvents.map((oneEvent) => {
-      return (
-        <TimelineEvent
-          person={oneEvent.person}
-          status={oneEvent.status}
-          time={oneEvent.time}
-        />
-      );
-    });
+    const timelineEventsList = <Timeline eventsList={currTimelineEvents}/>;
+
     console.log(timelineData);
 
-    // Customize the code below
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Application title</h1>
         </header>
         <main className="App-main">
-        <p>{eventsComponents}</p>
+        {timelineEventsList}
         </main>
       </div>
     );

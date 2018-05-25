@@ -7,15 +7,15 @@ class TimelineEvent extends React.Component {
     // const id = this.props.id;
     const person = this.props.person;
     const status = this.props.status;
-    const timestamp = this.props.time;
+    const timestamp = <Timestamp time={this.props.status}/>;
 
     // const timestamp = <Timestamp time={Date.now()} />;
 
     return (
-        <article>
-          <h5>{person}</h5>
-          <p>{timestamp}</p>
-          <p>{status}</p>
+        <article className="timeline-event">
+          <p className="event-person">{person}</p>
+          <p className="event-time">{timestamp}</p>
+          <p className="event-status">{status}</p>
         </article>
     );
   }
