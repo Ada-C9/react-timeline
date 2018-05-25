@@ -11,9 +11,9 @@ class TimelineEvent extends React.Component {
     // this.props.studentData.age;
 
     return(
-      <article>
-        <p>{person}</p>
-        <p>{status}</p>
+      <article className = "timeline-event">
+        <p className = "event-person">{person}</p>
+        <p className = "event-status">{status}</p>
         <Timestamp time = {eventTime} />
       </article>
     );

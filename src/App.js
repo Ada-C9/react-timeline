@@ -1,19 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import timelineData from './data/timeline.json';
-
 import Timeline from './components/Timeline';
 
-import TimelineEvent from './components/TimelineEvent';
-
-const timelineEvents = timelineData.events.map((timelineEvent) =>{
-      return (
-        <TimelineEvent
-          key = {timelineEvent.timeStamp}
-          eventData = {timelineEvent}
-        />
-      );
-    });
+const timelineEvents = timelineData.events;
 
 class App extends Component {
   render() {
@@ -26,7 +16,7 @@ class App extends Component {
           <h1 className="App-title">{timelineData.person}&apos;s Social Media Feed</h1>
         </header>
         <main className="App-main">
-          {timelineEvents}
+          <Timeline events={timelineEvents}/>
         </main>
       </div>
     );
