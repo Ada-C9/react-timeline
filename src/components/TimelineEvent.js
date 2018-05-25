@@ -8,6 +8,7 @@ class TimelineEvent extends React.Component {
     return (
       <section>
         <p>Zheng</p>
+        <Timestamp />
         <p>Programming</p>
       </section>
     );
