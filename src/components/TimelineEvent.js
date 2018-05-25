@@ -11,10 +11,10 @@ class TimelineEvent extends React.Component {
 
   render() {
     return (
-      <section>
-        <div>{this.getDate(this.props.date)}</div>
-        <div>{this.props.status}</div>
-        <div>By: {this.props.person}</div>
+      <section className='timeline-event'>
+        <div className='event-time'>{this.getDate(this.props.date)}</div>
+        <div className='event-status'>{this.props.status}</div>
+        <div className='event-person'>By: {this.props.person}</div>
 
 
       </section>

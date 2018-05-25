@@ -10,7 +10,7 @@ class App extends Component {
   render() {
 
     let events = timelineData.events.map((article, index) => {
-      return <TimelineEvent key={index} person={article.person} event={article.event} date={article.timeStamp} />
+      return <TimelineEvent key={index} person={article.person} status={article.status} date={article.timeStamp} />
     });
 
     return (
