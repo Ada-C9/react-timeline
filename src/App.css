@@ -13,5 +13,6 @@
 
 .App-main {
   padding-top: 7rem;
-  background-color: #E6ECF0;
+  /* background-color: #E6ECF0; */
+  background-color: rgba(166, 159, 159, 0.09);
 }

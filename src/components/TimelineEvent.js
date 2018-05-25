@@ -9,10 +9,10 @@ class TimelineEvent extends Component {
     const time = <Timestamp time={this.props.time}/>
 
     return(
-      <article>
-      <h3>Name: {person}</h3>
-      <p>status: {status}</p>
-      <p>time: {time}</p>
+      <article className="timeline-event">
+      <h3 className="event-person"> {person}</h3>
+      <p className="event-status"> {status}</p>
+      <p className="event-time"> {time}</p>
       </article>
     );
   }

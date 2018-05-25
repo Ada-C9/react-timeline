@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Timeline.css';
 import TimelineEvent from './TimelineEvent';
 
-class Timeline extends React.Component {
+class Timeline extends Component {
   render() {
     const events = this.props.events;
 
@@ -18,7 +18,7 @@ class Timeline extends React.Component {
     });
 
     return(
-      <article>
+      <article className="timeline">
       {eventComponents}
       </article>
     );
