@@ -7,7 +7,7 @@ class TimelineEvent extends React.Component {
     // const id = this.props.id;
     const person = this.props.person;
     const status = this.props.status;
-    const timestamp = <Timestamp time={this.props.status}/>;
+    const timestamp = <Timestamp time={this.props.timeStamp}/>;
 
     // const timestamp = <Timestamp time={Date.now()} />;
 
