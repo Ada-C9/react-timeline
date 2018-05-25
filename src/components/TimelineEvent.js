@@ -5,19 +5,20 @@ import Timestamp from './Timestamp';
 class TimelineEvent extends React.Component {
   getDate(timeStamp) {
     let date = '';
-    date += timeStamp.split('T');
-    return date
+    date = timeStamp.split('T');
+    return date[0]
   }
 
   render() {
-    <section>
-      <div>{TimelineEvent.getDate(this.props.timeStamp)}</div>
-      <div>{this.props.status}</div>
-      <div>By: {this.props.person}</div>
+    return (
+      <section>
+        <div>{this.getDate(this.props.date)}</div>
+        <div>{this.props.status}</div>
+        <div>By: {this.props.person}</div>
 
 
-    </section>
-    return;
+      </section>
+  )
   }
 }
 
