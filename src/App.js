@@ -6,7 +6,9 @@ import Timeline from './components/Timeline';
 
 class App extends Component {
   render() {
-    console.log(timelineData);
+const data = timelineData["events"];
+
+    console.log(data);
 
     // Customize the code below
     return (
@@ -15,6 +17,7 @@ class App extends Component {
           <h1 className="App-title">Application title</h1>
         </header>
         <main className="App-main">
+        <Timeline eventsData= {data}/>
         </main>
       </div>
     );
