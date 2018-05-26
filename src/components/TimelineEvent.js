@@ -10,7 +10,8 @@ class TimelineEvent extends React.Component {
   render() {
     let person = this.props.person
     let status = this.props.status
-    let timeStamp = this.props.timeStamp
+    let timeStamp = ( < Timestamp />)
+
 
     return (
       <section class="timeline-event">
@@ -19,6 +20,7 @@ class TimelineEvent extends React.Component {
         <strong class="event-status">{ status}</strong>
         <br/>
         <strong class="event-time">{ timeStamp }</strong>
+
         <br/>
       </section>
     );
