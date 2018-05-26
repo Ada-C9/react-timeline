@@ -5,16 +5,14 @@ import TimelineEvent from './TimelineEvent';
 class Timeline extends React.Component {
   render() {
 
-    const dunno = this.props.things;
-    // const eventComponent = dunno.map((thing) => {
-    //   return <TimelineEvent person={ thing.person } status={ thing.status } timestamp={ thing.timestamp } />
-    // });
-
-
+    // console.log(this.props.data);
+    const eventComponent = this.props.data.map((thing) => {
+      return <TimelineEvent person={ thing.person } status={ thing.status } timeStamp={ thing.timeStamp } />
+    });
+    // console.log(eventComponent);
 
     return (
-      [<TimelineEvent person={ dunno[0].person } status={ dunno[0].status } timestamp={ dunno[0].timestamp } />,
-      <TimelineEvent person={ dunno[1].person } status={ dunno[1].status } timestamp={ dunno[1].timestamp } />]
+      [eventComponent]
     );
   }
 }

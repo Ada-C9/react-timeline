@@ -10,7 +10,8 @@ class TimelineEvent extends React.Component {
       <div>
         <p>{this.props.person}</p>
         <p>{this.props.status}</p>
-        <p>{this.props.timestamp}</p>
+        <p>{this.props.timeStamp}</p>
+        <br />
       </div>
     )
   };
