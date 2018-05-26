@@ -10,10 +10,10 @@ class TimelineEvent extends React.Component {
     const timestamp = this.props.timestamp;
 
     return (
-    <article className="feedcontainer">
-    <h3>{person}</h3>
-    <p>{status}</p>
-    <p><Timestamp time={timestamp}/></p>
+    <article className="timeline-event">
+    <h3 className="event-person">{person}</h3>
+    <p className="event-status">{status}</p>
+    <p className="event-time"><Timestamp time={timestamp}/></p>
     </article>
   );
   }
