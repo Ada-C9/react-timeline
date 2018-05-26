@@ -18,16 +18,7 @@ class App extends Component {
         "timeStamp": "2018-05-18T22:19:40Z"
       } ];
 
-    const timelineData = testPosts.map((post) => {
-      return (
-        <TimelineEvent
-        key={post.person}
-        person={post.person}
-        status={post.status}
-        timestamp={post.timeStamp}
-        />
-      );
-    });
+      const thisTimeline = <Timeline events={testPosts} />
 
     console.log(timelineData);
 
@@ -38,7 +29,7 @@ class App extends Component {
           <h1 className="App-title">Application title</h1>
         </header>
         <main className="App-main">
-        {timelineData}
+        {thisTimeline}
         </main>
       </div>
     );
