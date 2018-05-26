@@ -10,27 +10,11 @@ import Timestamp from './components/Timestamp';
 class App extends Component {
   render() {
     let username = timelineData.person
-    console.log(username)
+    console.log(timelineData)
 
-    const fauxData = [
-      {
-        person: 'Angela',
-        status: 'same same',
-        timeStamp: '2018-05-18T22:19:40Z'
-      },
-      {
-        person: 'Karinna',
-        status: 'eh',
-        timeStamp: '2018-05-18T22:19:40Z'
-      },
-      {
-        person: 'Tor',
-        status: '<emoji>',
-        timeStamp: '2018-05-18T22:19:40Z'
-      }
-    ];
+    let events = timelineData.events
 
-    const eventComponents = fauxData.map((event) => {
+    const eventComponents = events.map((event) => {
       return <TimelineEvent person={ event.person } status={ event.status } timeStamp={ event.timeStamp } />
     });
 

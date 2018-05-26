@@ -14,12 +14,12 @@ class TimelineEvent extends React.Component {
 
 
     return (
-      <section class="timeline-event">
-        <strong class="event-person">{ person }</strong>
+      <section className="timeline-event">
+        <strong className="event-person">{ person }</strong>
         <br/>
-        <strong class="event-status">{ status}</strong>
+        <strong className="event-status">{ status}</strong>
         <br/>
-        <strong class="event-time">{ timeStamp }</strong>
+        <strong className="event-time">{ timeStamp }</strong>
 
         <br/>
       </section>
