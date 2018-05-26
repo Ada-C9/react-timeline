@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import timelineData from './data/timeline.json';
-
 import Timeline from './components/Timeline';
 
 class App extends Component {
@@ -9,12 +8,14 @@ class App extends Component {
     console.log(timelineData);
 
     // Customize the code below
+
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Application title</h1>
+          <h1 className="App-title">Are you hungry?</h1>
         </header>
         <main className="App-main">
+				<Timeline data={ timelineData.events } />
         </main>
       </div>
     );
