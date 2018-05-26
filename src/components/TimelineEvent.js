@@ -6,7 +6,7 @@ class TimelineEvent extends React.Component {
   render() {
     const eventAuthor = this.props.person;
     const eventStatus = this.props.status;
-    const eventTime = this.props.timestamp;
+    const eventTime = <Timestamp time={this.props.timeStamp} />;
     return (
       <article>
         <h3>{eventAuthor}</h3>
