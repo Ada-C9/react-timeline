@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import './App.css';
 import timelineData from './data/timeline.json';
 import Timeline from './components/Timeline';
-import TimelineEvent from './components/TimelineEvent'
+
 
 class App extends Component {
   render() {
-    console.log(timelineData);
+    console.log('app',timelineData);
 
 
     // Customize the code below
@@ -17,7 +17,8 @@ class App extends Component {
         </header>
         <main className="App-main">
 
-        <Timeline data = {timelineData}/>
+        <Timeline data = {timelineData} />
+
         </main>
       </div>
     );

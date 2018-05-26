@@ -6,12 +6,10 @@ class Timeline extends React.Component {
   render() {
     // Fill in your code here
     const eventsData = this.props.data;
-    console.log(eventsData);
+    console.log('cake', eventsData);
 
-
-
-    let timeLine = eventsData.map((events, index) => {
-    return <TimelineEvent key={index} person={events.person} status={events.status} time={events.time} />;
+    let timeLine = eventsData.events.map((eventx, index) => {
+    return <TimelineEvent key={index} eventPerson={eventx.person} eventStatus={eventx.status} eventTime={eventx.time} />;
     });
     return(
     <div> {timeLine}</div>
