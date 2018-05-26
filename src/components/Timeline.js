@@ -3,10 +3,10 @@ import './Timeline.css';
 import TimelineEvent from './TimelineEvent';
 
 class Timeline extends React.Component {
-  render() {
-    const feedData = this.props.events
 
-    const data = feedData.map((user, index) =>{
+  render() {
+    const seedData = this.props.events
+    const data = seedData.map((user, index) => {
       return (<TimelineEvent key={index} person={user.person} status={user.status} posted={user.timeStamp} />)
     });
 
