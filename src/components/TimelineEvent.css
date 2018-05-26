@@ -1,9 +1,15 @@
+* {
+  list-style-type: none;
+}
+
 .timeline-event {
   display: grid;
   grid-template: 2rem auto 2rem / 1fr 1fr;
-  padding: 0.5rem;
+  padding: 1rem;
   border-bottom: 1px solid #E6ECF0;
   background-color: #FFF;
+  width: 80vw;
+  margin: auto;
 }
 
 .timeline-event:hover {
