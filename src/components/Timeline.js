@@ -6,9 +6,12 @@ class Timeline extends React.Component {
   render() {
     console.log(TimelineEvent);
 
+    const events = this.props.events;
+
     return(
       <section>
-      <TimelineEvent person='Luxi' status='what what what' />
+      <TimelineEvent  />
+      {events}
       </section>
     );
   }
