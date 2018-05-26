@@ -15,7 +15,7 @@ class Timeline extends React.Component {
     };
 
     return (
-      <section id='timeline'>
+      <section className='timeline'>
         {getEvents(jsonEvents)}
       </section>
     );
