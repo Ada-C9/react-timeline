@@ -7,13 +7,13 @@ class TimelineEvent extends Component {
     // Fill in your code here
 		let person = this.props.person;
     let status = this.props.status;
-		let time = < Timestamp />;
+		let timeStamp = this.props.timeStamp;
 
     return(
 			<section className="event">
 			  <div className="top">
           <span>{ person }</span>
-					<span className="time-stamp">{ time }</span>
+					<span><Timestamp time={ timeStamp }/></span>
 				</div>
 				<div className="bottom">
           { status }

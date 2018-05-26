@@ -50,10 +50,6 @@
 	border-bottom: dashed 3px rgb(63, 111, 52);
 }
 
-.App-main {
-	background: linear-gradient(rgb(236, 149, 199), rgb(228, 127, 62));
-}
-
 .timeline-container {
 	margin: 30px 50px;
 	background: white;
