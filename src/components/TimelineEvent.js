@@ -13,7 +13,7 @@ class TimelineEvent extends React.Component {
     <article className="feedcontainer">
     <h3>{person}</h3>
     <p>{status}</p>
-    <p>{timestamp}</p>
+    <p><Timestamp time={timestamp}/></p>
     </article>
   );
   }
