@@ -4,20 +4,19 @@ import TimelineEvent from './TimelineEvent';
 
 class Timeline extends React.Component {
   render() {
-    // Fill in your code here
-    const person = this.props.person;
-    const status = this.props.status;
-    const timestamp = this.props.timestamp;
 
+        const timeLineObjects = this.props.events;
 
-    return (
-      <section>
-        <ul>
-          <li>{ person }</li>
-          <li>{ status }</li>
-          <li>TimeStamp: { timestamp }</li>
-        </ul>
-      </section>
+        console.log(timeLineObjects);
+
+        const objectsMap = timeLineObjects.map((object, index) => {
+          return <TimelineEvent key={index} person={ object.person } status={ object.status } time={ object.timeStamp } />
+        });
+
+        console.log(objectsMap);
+
+    return(
+      <section> {objectsMap} </section>
     );
 
   }
