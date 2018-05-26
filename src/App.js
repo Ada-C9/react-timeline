@@ -3,6 +3,7 @@ import './App.css';
 import timelineData from './data/timeline.json';
 import TimelineEvent from './components/TimelineEvent'
 import Timeline from './components/Timeline';
+import Timestamp from './components/Timestamp';
 
 
 class App extends Component {
@@ -22,9 +23,11 @@ class App extends Component {
         </header>
         <main className="App-main">
 
-
-        {timelinejsonData}
+        <section className="timeline">
+          {timelinejsonData}
           <TimelineEvent person="Kiera" status="I want to take a nap" timestamp="" />
+        </section>
+
 
         </main>
       </div>
