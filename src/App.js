@@ -9,7 +9,8 @@ import Timestamp from './components/Timestamp';
 
 class App extends Component {
   render() {
-    console.log(timelineData);
+    let username = timelineData.person
+    console.log(username)
 
     const fauxData = [
       {
@@ -37,7 +38,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Ada Lovelace's social media feed</h1>
+          <h1 className="App-title">{username}'s social media feed</h1>
         </header>
         <main className="App-main">
           {eventComponents}
