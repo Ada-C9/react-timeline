@@ -2,16 +2,11 @@ import React, { Component } from 'react';
 import './App.css';
 import timelineData from './data/timeline.json';
 
-import TimelineEvent from './components/TimelineEvent';
 import Timeline from './components/Timeline';
 
 class App extends Component {
 
   render() {
-
-    let events = timelineData.events.map((article, index) => {
-      return <TimelineEvent key={index} person={article.person} status={article.status} date={article.timeStamp} />
-    });
 
     return (
       <div className="App">
@@ -19,8 +14,8 @@ class App extends Component {
           <h1 className="App-title">Ada's Feed</h1>
         </header>
         <main className="App-main">
-          <section>
-            {events}
+          <section id='app'>
+            <Timeline events={timelineData.events} />
           </section>
         </main>
 
