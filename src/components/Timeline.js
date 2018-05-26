@@ -4,8 +4,13 @@ import TimelineEvent from './TimelineEvent';
 
 class Timeline extends React.Component {
   render() {
-    // Fill in your code here
-    return;
+    console.log(TimelineEvent);
+
+    return(
+      <section>
+      <TimelineEvent person='Luxi' status='what what what' />
+      </section>
+    );
   }
 }
 
