@@ -4,7 +4,7 @@ import TimelineEvent from './TimelineEvent';
 
 class Timeline extends React.Component {
   render() {
-    // Fill in your code here
+    const events = this.props.events;
     return;
   }
 }
