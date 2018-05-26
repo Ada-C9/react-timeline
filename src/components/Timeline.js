@@ -7,9 +7,9 @@ class Timeline extends React.Component {
     let eventData = this.props.events
 
     return (
-      <div className="timeline">
+      <section className="timeline">
         {eventData}
-      </div>
+      </section>
     );
   }
 }

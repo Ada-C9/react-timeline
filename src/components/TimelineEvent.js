@@ -8,17 +8,14 @@ class TimelineEvent extends React.Component {
     let status = this.props.status
     let timeStamp = this.props.timeStamp
 
-
     return (
       <section className="timeline-event">
-        <div className="event-person">{ person }</div>
+          <div className="event-person">{ person }</div>
 
-        <div className="event-status">{ status}</div>
+          <div className="event-status">{ status}</div>
 
-        <div className="event-time"><Timestamp time={ timeStamp }></Timestamp>
-        </div>
-
-
+          <div className="event-time"><Timestamp time={ timeStamp }></Timestamp>
+          </div>
       </section>
     );
   }
