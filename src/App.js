@@ -6,17 +6,12 @@ import Timeline from './components/Timeline';
 
 class App extends Component {
   render() {
-    console.log(timelineData.events.length);
 
     const accountOwner = timelineData.person + `'s`;
 
-    const postComponents = timelineData.events.map((post) => {
-      for (let key in post) {
-        return <Timeline events={post["person"]} />
-      }
-    });
+    const eventComponents = <Timeline events={timelineData.events} />
 
-    console.log(postComponents);
+    console.log(eventComponents);
 
     // Customize the code below
     return (
@@ -25,7 +20,7 @@ class App extends Component {
           <h1 className="App-title">{accountOwner} social media feed!</h1>
         </header>
         <main className="App-main">
-        {postComponents}
+        {eventComponents}
         </main>
       </div>
     );
