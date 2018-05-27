@@ -12,10 +12,10 @@ class TimelineEvent extends React.Component {
 
 
     return (
-      <section class="timeline-event">
-        <p class="event-person">{person} </p>
-        <p class="event-status">{status} </p>
-        <p class="event-time"><Timestamp time = {timestamp} /></p>
+      <section className="timeline-event">
+        <p className="event-person">{person} </p>
+        <p className="event-status">{status} </p>
+        <p className="event-time"><Timestamp time = {timestamp} /></p>
       </section>
     );
   }
