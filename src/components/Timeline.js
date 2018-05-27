@@ -1,22 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Timeline.css';
 import TimelineEvent from './TimelineEvent';
 
-class Timeline extends Component {
-	render() {
-		
-		let data = this.props.data;
-		console.log(data);
+const Timeline = (props) => {
 
-		const allData = data.map( (info, index) => {
-			return <TimelineEvent key={ index } person={ info.person } status={ info.status } timeStamp={ info.timeStamp }/>;
-		});
+	let data = props.data;
 
-		return (
-			<div className="timeline-container"> { allData }
-			</div>
-		);
-	}
+	const allData = data.map( (info, index) => {
+		return <TimelineEvent key={ index } person={ info.person } status={ info.status } timeStamp={ info.timeStamp }/>;
+	});
+
+	return (
+		<div className="timeline-container"> { allData }
+		</div>
+	);
+
 }
 
 export default Timeline;

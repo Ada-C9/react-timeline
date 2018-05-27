@@ -1,24 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './TimelineEvent.css';
 import Timestamp from './Timestamp';
 
-class TimelineEvent extends Component {
-  render() {
-    // Fill in your code here
-		let person = this.props.person;
-    let status = this.props.status;
-		let timeStamp = this.props.timeStamp;
-
-    return(
-			<section className="timeline-event">
-        <span className="event-person">{ person }</span>
-				<span className="event-time"><Timestamp time={ timeStamp }/></span>
-		  	<div className="event-status">
-        { status }
-			  </div>
-			</section>
-		);
-  }
-}
+const TimelineEvent = (props) => (
+	<section className="timeline-event">
+    <span className="event-person">{ props.person }</span>
+		<span className="event-time"><Timestamp time={ props.timeStamp }/></span>
+  	<div className="event-status">
+    { props.status }
+	  </div>
+	</section>
+)
 
 export default TimelineEvent;
