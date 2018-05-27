@@ -9,13 +9,14 @@ class TimelineEvent extends React.Component {
     const timeStamp = this.props.timeStamp;
 
     return (
-      <section>
-      <ul>
-      <li>Name: { person }</li>
-      <li>Status: { status }</li>
-      <li>Time: { timeStamp }</li>
-      </ul>
+      <section class="timeline-event">
+
+      <p class="event-person"><strong> Name: </strong> { person }</p>
+      <p class="event-status"><strong> Status: </strong> { status }</p>
+      <p class="event-time">< Timestamp time = { timeStamp } /> </p>
+
       </section>
+
     );
   }
 

@@ -16,7 +16,7 @@ class Timeline extends React.Component {
         console.log(objectsMap);
 
     return(
-      <section> {objectsMap} </section>
+      <section class="timeline"> {objectsMap} </section>
     );
 
   }
