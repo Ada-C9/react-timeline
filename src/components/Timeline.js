@@ -6,21 +6,16 @@ class Timeline extends React.Component {
   render() {
     console.log(TimelineEvent);
 
-    const events = this.props.events;
+    const postList = this.props.eventsList
 
-    console.log(events);
-
-    const postComponents = events.map((post, index) => {
-      // for (let key in post) {
-        return <TimelineEvent key={ index } person={post["person"]} status={post["status"]} time={post["timeStamp"]} />
-      // }
+    const postComponents = postList.map((post, index) => {
+      return <TimelineEvent key={ index } person={post.person} status={post.status} time={post.timeStamp} />
     });
 
     return(
-      <section>
-      <TimelineEvent  />
+      <div className="timeline">
       {postComponents}
-      </section>
+      </div>
     );
   }
 }

@@ -9,9 +9,7 @@ class App extends Component {
 
     const accountOwner = timelineData.person + `'s`;
 
-    const eventComponents = <Timeline events={timelineData.events} />
-
-    console.log(eventComponents);
+    const eventComponents = <Timeline eventsList={timelineData.events} />
 
     // Customize the code below
     return (
