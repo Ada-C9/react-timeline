@@ -6,7 +6,6 @@ import TimelineEvent from './TimelineEvent';
 class Timeline extends Component {
   render() {
     const timelineEvents = this.props.events
-    console.log(timelineEvents);
     const timelineData = timelineEvents.map((event, index) => {
       return <TimelineEvent key={index} person={event.person} status={event.status} timeStamp={event.timeStamp} />;
     });
