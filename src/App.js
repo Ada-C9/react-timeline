@@ -5,21 +5,19 @@ import timelineData from './data/timeline.json';
 import Timeline from './components/Timeline';
 import Timestamp from './components/Timestamp';
 
-
-
 class App extends Component {
   render() {
     console.log(timelineData);
 
-    const posts = [
-      {
-        person: "Maggie Mutt",
-        status: "Guess what I smelled today!",
-        timestamp: "2018-05-18T22:19:40Z"
-      }
-    ]
+    // const posts = [
+    //   {
+    //     person: "Maggie Mutt",
+    //     status: "Guess what I smelled today!",
+    //     timestamp: "2018-05-18T22:19:40Z"
+    //   }
+    // ]
 
-    const postsComponents = posts.map((post) => {
+    const postsComponents = timelineData.events.map((post) => {
       return (
         <li key={post.person}>
           <p>{post.person}</p>

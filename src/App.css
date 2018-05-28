@@ -1,5 +1,5 @@
 .App-header {
-  background-color: #222;
+  background-color: rgb(84,84,84);
   padding-bottom: 0.5rem;
   color: white;
   position: fixed;
@@ -14,4 +14,14 @@
 .App-main {
   padding-top: 7rem;
   background-color: #E6ECF0;
+}
+
+li{
+  list-style-type: none;
+  background-color: rgba(84,84,84,.3);
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2rem;
+  width: 40%;
+  border-bottom: rgb(84,84,80) solid 2px;
 }
