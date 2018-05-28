@@ -3,9 +3,22 @@ import './Timeline.css';
 import TimelineEvent from './TimelineEvent';
 
 class Timeline extends React.Component {
+
   render() {
-    // Fill in your code here
-    return;
+
+    let jsonEvents = this.props.events;
+
+    const getEvents = (events) => {
+      return events.map((article, index) => {
+        return <TimelineEvent key={index} person={article.person} status={article.status} date={article.timeStamp} />
+      });
+    };
+
+    return (
+      <section className='timeline'>
+        {getEvents(jsonEvents)}
+      </section>
+    );
   }
 }
 
