@@ -2,4 +2,24 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Muli', sans-serif;
+  background-color: grey;
+}
+
+div{
+  display: flex;
+  flex-direction: column;
+}
+
+section{
+  display:flex;
+  flex-direction: column;
+  width: 300px;
+  align-self: center;
+  border-bottom: solid 2px #000000;
+}
+
+#postid{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
 }
