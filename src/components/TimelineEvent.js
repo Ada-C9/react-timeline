@@ -11,9 +11,9 @@ class TimelineEvent extends React.Component {
 
     return(
       <section class='timeline-event'>
-        <p class='event-person'>Poster: {eventPoster}</p>
-        <p class='event-status'>Status: {eventStatus}</p>
-        <p class='event=time'>Time: {eventTime}</p>
+        <p class='event-person'> {eventPoster}</p>
+        <p class='event-status'> {eventStatus}</p>
+        <p class='event=time'> {eventTime}</p>
       </section>
     );
   }
