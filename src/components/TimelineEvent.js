@@ -9,7 +9,20 @@ class TimelineEvent extends React.Component {
     const status = this.props.eventStatus
     const timeProperty = this.props.eventTime
     const timeElement = <Timestamp time ={timeProperty} />
-    return( <section> {person} {status} {timeElement}</section>);
+    return( <section>
+                  <aside id="postid">
+                    <p className="name">
+                      {person}
+                    </p>
+                    <p className="timeElement">
+                      {timeElement}
+                    </p>
+                    </aside>
+                    <p className="status">
+                      {status}
+                    </p>
+
+            </section>);
   }
 }
 

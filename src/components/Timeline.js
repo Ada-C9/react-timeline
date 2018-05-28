@@ -8,11 +8,15 @@ class Timeline extends React.Component {
     const eventsData = this.props.data;
     console.log('cake', eventsData);
 
+
     let timeLine = eventsData.events.map((eventx, index) => {
     return <TimelineEvent key={index} eventPerson={eventx.person} eventStatus={eventx.status} eventTime={eventx.time} />;
     });
+
     return(
+    
     <div> {timeLine}</div>
+
   );
   }
 }
