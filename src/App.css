@@ -1,17 +1,31 @@
 .App-header {
-  background-color: #222;
-  padding-bottom: 0.5rem;
-  color: white;
-  position: fixed;
-  width: 100%;
+	background-color: white;
+	padding-bottom: 0.5rem;
+	color: black;
+	position: fixed;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
 
 .App-title {
-  text-align: center;
-  font-size: 1.5em;
+	text-align: center;
+	font-size: 3rem;
+	display: inline;
 }
 
 .App-main {
-  padding-top: 7rem;
-  background-color: #E6ECF0;
+	padding: 10rem 8rem;
+	background: linear-gradient(rgb(236, 149, 199), rgb(228, 127, 62));
+}
+
+.octos {
+	width: 100px;
+	animation: octos-spin infinite 20s linear;
+}
+
+@keyframes octos-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
