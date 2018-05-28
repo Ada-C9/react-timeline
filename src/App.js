@@ -12,7 +12,7 @@ class App extends Component {
           <h1 className="App-title">React Timeline App</h1>
         </header>
         <main className="App-main">
-        {timelineData.events}
+        <Timeline events={timelineData.events}/>
         </main>
       </div>
     );
