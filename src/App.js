@@ -33,7 +33,7 @@ class App extends Component {
         </header>
         <main className="App-main">
 
-          {eventComponents}
+          { eventComponents }
         </main>
       </div>
     );
