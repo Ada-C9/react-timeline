@@ -8,12 +8,12 @@ class TimelineEvent extends React.Component {
     const post = this.props.status
     const timeStamp = this.props.timeStamp
     return(
-      <section>
-      <p>{post}</p>
-      <ul>
-      <li>{user}</li>
-      <li>{timeStamp}</li>
-      </ul>
+      <section className="timeline-event">
+
+      <p className="timeline-event:hover">{post}</p>
+      <p className="event-person">{user}</p>
+      <p className="event-time"><Timestamp time = {timeStamp}/></p>
+
       </section>
     );
   }

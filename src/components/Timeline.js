@@ -11,7 +11,7 @@ class Timeline extends React.Component {
     });
     // Fill in your code here
     return(
-      <section>
+      <section className="timeline" >
       {timeLineEvents}
       </section>
 
