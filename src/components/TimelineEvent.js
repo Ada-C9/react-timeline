@@ -4,7 +4,9 @@ import Timestamp from './Timestamp';
 
 class TimelineEvent extends Component {
   render() {
+    console.log(this.props);
     const { person, status, timestamp } = this.props
+    // console.log({person})
 
     return (
       <article className="timeline-event">
