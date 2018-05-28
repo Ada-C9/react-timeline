@@ -5,26 +5,23 @@ import data from '../data/timeline.json';
 
 class Timeline extends React.Component {
   render() {
-    // Fill in your code here
     const events = data.events;
 
-        const timelineEventcomponents = events.map((event) => {
-          return(
-            <TimelineEvent
-            key={event.timestamp}
-            person={event.person}
-            status={event.status}
-            timestamp ={event.timestamp}
-            />
+    const timelineEventComponents = events.map((event) => {
+      return (
+        <TimelineEvent
+          key={event.timeStamp}
+          person={event.person}
+          status={event.status}
+          timeStamp={event.timeStamp}
+        />
+      );
+    });
 
-          );
-        });
-        return(
-          <div>{timelineEventcomponents}</div>
-        );
-    }
+    return (
+      <div>{timelineEventComponents}</div>
+    );
   }
-
-
+}
 
 export default Timeline;

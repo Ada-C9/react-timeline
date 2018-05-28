@@ -5,16 +5,15 @@ import Timestamp from './Timestamp';
 class TimelineEvent extends React.Component {
   render() {
     const person = this.props.person;
+    const timeStamp = this.props.timeStamp;
     const status = this.props.status;
-    const timestamp = this.props.timestamp;
 
-
-    return(
-      <article>
-      <p>{person}</p>
-      <p> {status}</p>
-      <p>{timestamp}</p>
-      </article>
+    return (
+      <section className="timeline-event">
+        <p>{person}</p>
+        <p>{timeStamp}</p>
+        <p>{status}</p>
+      </section>
     );
   }
 }
