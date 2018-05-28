@@ -3,3 +3,38 @@
   margin: auto;
   text-align: left;
 }
+
+* {
+    box-sizing: content-box;
+}
+
+section.main-timeline {
+    background-color: #fff;
+    margin: 2vh 15vw;
+}
+
+section.post {
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid .75px lightgray;
+    padding: 4vw;
+}
+section.post:hover {
+    background-color: #f0f4f6;
+}
+
+h2.user-name {
+    font-size: 1em;
+}
+
+span.timestamp {
+    align-self: flex-end;
+    position: absolute;
+    padding: 2vh;
+    font-size: smaller;
+}
+
+
+article.status {
+    overflow: hidden;
+}
