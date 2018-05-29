@@ -8,11 +8,11 @@ class TimelineEvent extends React.Component {
     const status = this.props.status;
 
     return(
-        <div class="timeline-event">
-          <span class="event-person"><strong>{person}</strong></span>
-          <span class="event-time"><Timestamp /></span>
-          <p class="event-status">{status}</p>
-        </div>
+        <article className="timeline-event">
+          <span className="event-person"><strong>{person}</strong></span>
+          <span className="event-time"><Timestamp /></span>
+          <p className="event-status">{status}</p>
+        </article>
     )
   }
 }
