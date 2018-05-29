@@ -15,7 +15,10 @@ class App extends Component {
           <h1 className="App-title">"All the Media that's Fit to Share"</h1>
         </header>
         <main className="App-main">
-          < TimelineEvent />
+          < TimelineEvent
+            person="Geraldine L. Hapless"
+            status="Ruby chocolate: Maybe?"
+           />
         </main>
       </div>
     );
