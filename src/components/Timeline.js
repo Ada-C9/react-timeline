@@ -4,15 +4,17 @@ import TimelineEvent from './TimelineEvent';
 
 class Timeline extends React.Component {
   render() {
-    const post = posts.map((post) => {
+    let events = this.prop.events;
+
+    const posts = events.map((event) => {
 
       return (
-        <li key={post.person}>
+        <li key={event.person}>
 
           < TimelineEvent
-            person = {post.person}
-            status = {post.status}
-            timestamp = {post.timestamp}
+            person = {event.person}
+            status = {event.status}
+            timestamp = {event.timestamp}
           />
 
         </li>
@@ -20,8 +22,7 @@ class Timeline extends React.Component {
     });
     // Fill in your code here
     return
-
-    ;
+      posts();
   }
 }
 
