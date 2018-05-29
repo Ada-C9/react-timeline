@@ -10,21 +10,6 @@ class App extends Component {
     const timelineOwner = timelineData.person;
     const timelineFeed = timelineData.events;
     console.log(timelineFeed)
-    // const timelineComponents = timelineFeed.map((item) => {
-    //   let itemTimeStamp = <Timestamp
-    //     time= {item.timeStamp}
-    //   />
-    //   return (
-    //     <TimelineEvent
-    //     key={item.person}
-    //     status={item.status}
-    //     timestamp= {itemTimeStamp}
-    //     person={item.person}
-    //     />
-    //   );
-    // });
-    //
-    // console.log(timelineComponents)
     return (
       <div className="App">
         <header className="App-header">
