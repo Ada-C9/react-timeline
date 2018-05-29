@@ -1,7 +1,13 @@
+
 .App-header {
-  background-color: #222;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIFZ745jHURSEsoYESWPte3icLCXKCxQwUG9vrXnMxoslXn86i");
   padding-bottom: 0.5rem;
   color: white;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
   position: fixed;
   width: 100%;
 }
@@ -14,4 +20,24 @@
 .App-main {
   padding-top: 7rem;
   background-color: #E6ECF0;
+}
+
+* {
+  list-style: none;
+}
+
+
+big {
+  background-color: #D8BFD8;
+}
+
+#rightSide {
+  text-align: right;
+  color: green;
+}
+
+p {
+  padding-left: 3rem;
+  padding-top: none;
+  padding-bottom: 0.5rem;
 }
