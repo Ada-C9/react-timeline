@@ -7,7 +7,7 @@ class TimelineEvent extends React.Component {
     // Fill in your code here
     return(
       <div class="timeline-event">
-      <h2 class="event-person">{this.props.person}</h2>
+      <p class="event-person">{this.props.person}</p>
       <p class="event-status">{this.props.status}</p>
       <p class="event-time"><Timestamp time={this.props.timestamp}/></p>
       </div>
