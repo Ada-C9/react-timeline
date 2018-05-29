@@ -1,20 +1,29 @@
 import React, { Component } from 'react';
 import './Timeline.css';
 import TimelineEvent from './TimelineEvent';
+import data from '../data/timeline.json';
 
 class Timeline extends React.Component {
 	render() {
 		// Fill in your code here
-		fetch('./data/timeline.json')
-		.then((response) => {
-			console.log('response: ' + response);
-		})
-		.then((data) => {
-			console.log('data: ' + data);
+		const person = data.person;
+		const posts = data.events;
+		console.log(person);
+		console.log(posts);
+		const postCollection = posts.map((post)=>{
+			return <div className='timeline'>
+				<TimelineEvent
+					person={post.person}
+					status={post.status}
+					timeStamp={post.timeStamp}
+					/>
+			</div>
 		});
 		return(
 			<section>
-				<TimelineEvent person="Adele Goldberg" status="In Smalltalk, everything happens somewhere else." timeStamp='2018-05-18T22:12:03Z' />
+
+				{postCollection}
+
 			</section>
 		);
 	}
