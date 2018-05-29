@@ -1,27 +1,32 @@
 import React, { Component } from 'react';
 import './Timeline.css';
+import Timestamp from './Timestamp';
 import TimelineEvent from './TimelineEvent';
 
 
 class Timeline extends React.Component {
   render() {
-
     const events = this.props.events
-    console.log(events);
-    const timelineEventFeed = "puppies!"
-    // const timelineEventFeed = events.map((event) => {
-    //   return (
-    //     <TimelineEvent
-    //       key={event.person}
-    //       person={event.person}
-    //       status={event.status}
-    //       timestamp={event.timestamp}
-    //       />
-    //     );
-    // });
+    const timelineEventFeed = events.map((item) => {
+      let itemTimeStamp = <Timestamp
+        time= {item.timeStamp}
+      />
+      return (
+        <TimelineEvent
+        key={item.person}
+        status={item.status}
+        timestamp= {itemTimeStamp}
+        person={item.person}
+        />
+      );
+    });
 
     return (
-      {timelineEventFeed}
+      <ul>
+        {timelineEventFeed.map(function(element){
+          return <li>{element}</li>;
+        })}
+      </ul>
     );
   }
 }
