@@ -12,16 +12,16 @@ class Timeline extends React.Component {
       return (
         <section key={event.person}>
         <TimelineEvent
-          person={event.person}
-          status={event.status}
-          timestamp={event.timeStamp}
+        person={event.person}
+        status={event.status}
+        timestamp={event.timeStamp}
         />
         </section>
       );
     });
     return(
       <section className="timeline">
-        {timelineEvents}
+      {timelineEvents}
       </section>
     );
   }
