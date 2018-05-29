@@ -3,22 +3,38 @@ import './App.css';
 import timelineData from './data/timeline.json'
 import Timeline from './components/Timeline';
 import TimelineEvent from './components/TimelineEvent';
+import Timestamp from './components/Timestamp';
 
 class App extends Component {
   render() {
-    console.log(timelineData);
+    const timelineOwner = timelineData.person;
+    const timelineFeed = timelineData.events;
+    console.log(timelineFeed)
+    const timelineComponents = timelineFeed.map((item) => {
+      let itemTimeStamp = <Timestamp
+        time= {item.timeStamp}
+      />
+      return (
+        <TimelineEvent
+        key={item.person}
+        status={item.status}
+        timestamp= {itemTimeStamp}
+        person={item.person}
+        />
+      );
+    });
 
-    // Customize the code below
+    console.log(timelineComponents)
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">"All the Media that's Fit to Share"</h1>
+          <h1 className="App-title">{timelineOwner}'s Social Media Feed: All the Media that's Fit to Share</h1>
         </header>
         <main className="App-main">
-          < TimelineEvent
-            person="Geraldine L. Hapless"
-            status="Ruby chocolate: Maybe?"
-           />
+          <article>
+            {timelineComponents}
+          </article>
+
         </main>
       </div>
     );
