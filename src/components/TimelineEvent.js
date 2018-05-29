@@ -4,8 +4,13 @@ import Timestamp from './Timestamp';
 
 class TimelineEvent extends React.Component {
   render() {
-    // Fill in your code here
-    return;
+    return (
+      <article>
+        <h3>User: Somebody </h3>
+        <p>Status: Some stuff </p>
+        <h5>< Timestamp /></h5>
+      </article>
+    );
   }
 }
 
