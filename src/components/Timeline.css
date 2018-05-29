@@ -1,5 +1,6 @@
 .timeline {
   width: 30%;
+  min-width: 500px;
   margin: auto;
   text-align: left;
 }
