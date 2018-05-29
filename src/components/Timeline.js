@@ -11,7 +11,7 @@ class Timeline extends React.Component {
       return <TimelineEvent person= {event.person} status={event.status} timeStamp={event.timeStamp}/>
     });
     return (
-      <div>
+      <div className="timeline">
       {timelineEvents}
       </div>
 
