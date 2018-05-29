@@ -10,10 +10,10 @@ class TimelineEvent extends React.Component {
     const status = this.props.status;
 
     return (
-      <section>
-      <p>{person}<span>{timeStamp}</span></p>
+      <section className="timeline-event">
+      <p className="event-person">{person}</p><span>{timeStamp}</span>
 
-      <p>{status}</p>
+      <p className="event-status">{status}</p>
 
       </section>
     );
