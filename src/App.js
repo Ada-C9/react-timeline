@@ -17,15 +17,15 @@ class App extends Component {
     //   }
     // ]
 
-    const postsComponents = timelineData.events.map((post) => {
-      return (
-        <li key={post.person}>
-          <p>{post.person}</p>
-          <p>{post.status}</p>
-          <p><Timestamp time={post.timestamp}/></p>
-        </li>
-      );
-    });
+    // const postsComponents = timelineData.events.map((post) => {
+    //   return (
+    //     <li key={post.person}>
+    //       <p>{post.person}</p>
+    //       <p>{post.status}</p>
+    //       <p><Timestamp time={post.timestamp}/></p>
+    //     </li>
+    //   );
+    // });
 
     return (
       <div className="App">
@@ -33,7 +33,7 @@ class App extends Component {
           <h1 className="App-title">Really Realistic Life Posts</h1>
         </header>
         <main className="App-main">
-          {postsComponents}
+          <Timeline events={timelineData.events} />
         </main>
       </div>
     );

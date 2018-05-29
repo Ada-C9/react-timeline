@@ -12,7 +12,7 @@ class TimelineEvent extends Component {
       <article>
         <h3>Person: {person}</h3>
         <p>Status: {status}</p>
-        <p>Time: {timestamp} </p>
+        <p><Timestamp time={timestamp}/></p>
       </article>
     );
   }
