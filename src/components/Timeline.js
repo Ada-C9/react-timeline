@@ -4,8 +4,12 @@ import TimelineEvent from './TimelineEvent';
 
 class Timeline extends React.Component {
   render() {
-    // Fill in your code here
-    return;
+
+    const eventComponents = this.props.data.map((event) => {
+      return <TimelineEvent person={ event.person } status={ event.status } timeStamp={ event.timeStamp } />
+    });
+
+    return eventComponents;
   }
 }
 
