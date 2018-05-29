@@ -1,11 +1,21 @@
 import React, { Component } from 'react';
 import './Timeline.css';
-import TimelineEvent from './TimelineEvent';
+import Post from './Post';
 
 class Timeline extends React.Component {
   render() {
-    // Fill in your code here
-    return;
+    const events = this.props.events;
+
+    const posts = events.map((event)=>{
+      return <Post person={event.person} status={event.status} time={event.timeStamp} />;
+    });
+
+    return(
+      <section className="timeline">
+        { posts }
+      </section>
+
+    )
   }
 }
 
