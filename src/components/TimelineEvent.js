@@ -4,9 +4,16 @@ import Timestamp from './Timestamp';
 
 class TimelineEvent extends React.Component {
   render() {
-    // Fill in your code here
-    return;
-  }
+    return (
+    <div>
+       <p>Brittany</p>
+       <p>Should be Sleeping</p>
+       <p><Timestamp /></p>
+       </div>
+
+   );
+ }
 }
+
 
 export default TimelineEvent;
