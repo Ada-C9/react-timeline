@@ -12,10 +12,10 @@ class TimelineEvent extends React.Component {
     // Should take in 3 props, person, timeStamp and status
     return (
 
-      <div>
-      <p>{person}</p>
-      <p>{status}</p>
-      <p>{timeStamp}</p>
+      <div className="timeline-event">
+      <p className="event-person">{person}</p>
+      <p className="event-status">{status}</p>
+      <p className="event-time">{timeStamp}</p>
       </div>
 
     );
