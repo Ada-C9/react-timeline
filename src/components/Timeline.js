@@ -4,7 +4,7 @@ import TimelineEvent from './TimelineEvent';
 
 class Timeline extends React.Component {
   render() {
-    let events = this.prop.events;
+    let events = this.props.events;
 
     const posts = events.map((event) => {
 
@@ -21,8 +21,10 @@ class Timeline extends React.Component {
       );
     });
     // Fill in your code here
-    return
-      posts();
+    return(
+      //Why doesn't it work when I make it posts() ?
+      posts
+    );
   }
 }
 
