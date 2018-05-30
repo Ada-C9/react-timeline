@@ -1,8 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
+
 import './TimelineEvent.css';
 import Timestamp from './Timestamp';
 
 class TimelineEvent extends React.Component {
+  static propTypes = {
+    person: PropTypes.string.isRequired,
+    status: PropTypes.string.isRequired,
+    time: PropTypes.string.isRequired,
+  }
+  
   render() {
     console.log(Timestamp);
 
