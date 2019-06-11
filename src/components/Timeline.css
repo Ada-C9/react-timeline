@@ -1,5 +1,8 @@
 .timeline {
-  width: 30%;
+  width: 50%;
   margin: auto;
   text-align: left;
+  background-color: white;
+  padding: 20px;
+  font-size: 1.4rem;
 }
