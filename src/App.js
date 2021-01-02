@@ -1,20 +1,28 @@
 import React, { Component } from 'react';
 import './App.css';
-import timelineData from './data/timeline.json';
-
+import timelineData from './data/timeline.json'
 import Timeline from './components/Timeline';
+import TimelineEvent from './components/TimelineEvent';
+import Timestamp from './components/Timestamp';
 
 class App extends Component {
   render() {
-    console.log(timelineData);
-
-    // Customize the code below
+    const timelineOwner = timelineData.person;
+    const timelineFeed = timelineData.events;
+    console.log(timelineFeed)
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Application title</h1>
+          <h1 className="App-title">{timelineOwner}'s Social Media Feed:</h1>
+          <h2 className="App-title"> All the Posts That're Fit to Share (plus a few more):</h2>
         </header>
         <main className="App-main">
+          <article>
+            <Timeline
+              events={timelineFeed}
+            />
+          </article>
+
         </main>
       </div>
     );
