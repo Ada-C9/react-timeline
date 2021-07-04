@@ -25,3 +25,8 @@
   margin-top: 0.5rem;
   text-align: right;
 }
+
+.post {
+  border-bottom: 1px solid;
+  padding: 20px;
+}
